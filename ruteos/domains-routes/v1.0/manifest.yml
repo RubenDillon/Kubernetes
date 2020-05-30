@@ -1,0 +1,4 @@
+---
+applications:
+- name: v19.0
+  memory: 64M

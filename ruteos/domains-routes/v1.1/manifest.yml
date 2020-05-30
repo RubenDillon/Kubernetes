@@ -1,0 +1,4 @@
+---
+applications:
+- name: v191
+  memory: 64M

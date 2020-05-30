@@ -1,0 +1,8 @@
+applications:
+- name: web-app
+  random-route: true
+  memory: 64M
+  buildpacks:
+  - python_buildpack
+  command: python web-app.py
+
