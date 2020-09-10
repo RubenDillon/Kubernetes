@@ -1,0 +1,5 @@
+applications:
+- name: 12factor 
+  memory: 64M
+  disk_quota: 256M
+  buildpack: ruby_buildpack
