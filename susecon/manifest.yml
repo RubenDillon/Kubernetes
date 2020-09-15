@@ -1,0 +1,5 @@
+---
+applications:
+- name: cf-demo-app
+  description : Simple demo that prints the server's environment variables.
+  memory: 64M

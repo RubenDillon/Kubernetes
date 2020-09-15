@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+.navbar-main {
+  height: 70px;
+  background: #fff;
+  border: none;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-main > img {
+  height: 42px;
+  margin-left: 10px;
+}
+
+.home-banner {
+  height: 468px;
+  background: #5ece57 url(/images/circle-prague-banner.png) no-repeat;
+  background-size: contain;
+  background-position: 95% center;
+  text-align: left;
+  padding: 40px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.home-banner h1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-suse-blue {
+  color: #0D2C40;
+}
+
+p {
+  line-height: 28px;
+  margin: 0 0 10px;
+}
+
+h1, h4, h2 {
+  font-family: Gotham SSm A, Gotham SSm B, sans-serif;
+  /* font-family: Gotham Cond SSm A, Gotham Cond SSm B, sans-serif; */
+}
+
+.stratos {
+  font-family: Gotham SSm A, Gotham SSm B, sans-serif;
+  text-align: center;
+  margin: 40px 0;
+  font-size: 28px;
+}
