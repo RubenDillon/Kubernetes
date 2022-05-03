@@ -1,0 +1,25 @@
+---
+apiVersion: networking.k8s.io/v1
+#apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nginxingress
+  labels:
+    gslb: "yes"
+spec:
+  ingressClassName: avi-lb
+  tls:
+  - hosts:
+      - nginx.site1.avi.com
+    secretName: bs1-tls
+  rules:
+  - host: nginx.site1.avi.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: tomcat-service
+            port:
+              number: 8080
