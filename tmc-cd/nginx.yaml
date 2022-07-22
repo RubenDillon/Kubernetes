@@ -5,7 +5,7 @@ metadata:
   labels:
     run: nginx
   name: nginx
-  namespace: default
+  namespace: nginx
 spec:
   containers:
   - image: nginx
