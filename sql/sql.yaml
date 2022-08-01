@@ -1,63 +1,36 @@
 apiVersion: apps/v1 
-
 kind: Deployment 
 
 metadata: 
-
   name: mssql 
 
 spec: 
-
   replicas: 1
-
   selector:
     matchLabels:
       app: mssql 
 
   template: 
-
     metadata: 
-
       labels: 
-
         app: mssql 
-
     spec: 
-
       terminationGracePeriodSeconds: 10 
-
       containers: 
-
       - name: mssql 
-
         image: mcr.microsoft.com/mssql/server 
 
- 
-
         ports: 
-
         - containerPort: 1433 
-
         env: 
-
         - name: ACCEPT_EULA 
-
           value: "Y" 
-
         - name: SA_PASSWORD 
-
           value: suSE2019#2020_ 
-
         volumeMounts: 
-
         - name: mssqldb 
-
           mountPath: /var/opt/mssql 
-
       volumes: 
-
       - name: mssqldb 
-
         persistentVolumeClaim: 
-
           claimName: sqlpvc  
