@@ -47,4 +47,4 @@ spec:
       resources:
         requests:
           storage: 1Gi
-      storageClassName: thin-disk
+      storageClassName: vc01cl01-t0compute
