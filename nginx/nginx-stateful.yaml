@@ -9,7 +9,8 @@ spec:
   ports:
   - port: 80
     name: web
-  clusterIP: None
+    targetPort: 80
+  type: LoadBalancer
   selector:
     app: nginx
 ---
