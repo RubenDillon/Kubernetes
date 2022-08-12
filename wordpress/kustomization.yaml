@@ -2,6 +2,7 @@ secretGenerator:
 - name: mysql-pass
   literals:
   - password=MiPassWord
+  namespace: default
 resources:
   - mysql-deployment.yaml
   - wordpress-deployment.yaml
