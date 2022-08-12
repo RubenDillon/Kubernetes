@@ -50,7 +50,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: wordpress:4.8-apache
+      - image: harbor.20.253.171.68.nip.io/library/wordpress:4.8-apache
         name: wordpress
         env:
         - name: WORDPRESS_DB_HOST
