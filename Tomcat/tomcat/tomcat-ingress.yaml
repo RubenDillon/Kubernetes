@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: http-apache
+  labels:
+     app.kubernetes.io/name: tomcat
+spec:
+  rules:
+  - host: foo.bar.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: my-tom-tomcat
+          servicePort: 80
