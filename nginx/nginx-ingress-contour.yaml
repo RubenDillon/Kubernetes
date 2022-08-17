@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: http-nginx-ingress
+  labels:
+    app: nginx
+spec:
+  rules:
+  - host: prueba.ruben.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: lb-service
+          servicePort: 80
