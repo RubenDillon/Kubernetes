@@ -1,7 +1,7 @@
 Set de despliegues para mostrar a traves de Contour, como se puede realizar Canary Deployment.
 
 La idea original es desplegar la aplicacion foo-bar... que permite a traves del despliegue del Deployment, el Servicio y del Ingress... 
-apuntar al ingress (envoy) y si ponemos foo.bar.com/foo... nos lleva a un servicio (S1) y si ponemos foo.bar.com/s2... nos lleva al otro
+apuntar al ingress (envoy) y si ponemos foo.bar.com/foo... nos lleva a un servicio (S1) y si ponemos foo.bar.com/bar... nos lleva al otro
 
 Modificado el ingress por el HTTPProxy... la idea es tener v1 y v2 del aplicativo
 
