@@ -17,4 +17,4 @@ spec:
           weight: 10
         - name: s2
           port: 80
-          weight:90
+          weight: 90
