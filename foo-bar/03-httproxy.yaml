@@ -14,7 +14,7 @@ spec:
       services:  
         - name: s1
           port: 80
-          weight: 10
-        - name: s2
+          weight: 30
+        - name: s2a
           port: 80
-          weight: 90
+          weight: 70
