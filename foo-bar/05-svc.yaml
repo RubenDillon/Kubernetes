@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: s1a
+  namespace: test-ingress
+  labels:
+    app: hello2
+spec:
+  selector:
+    app: hello2
+    tier: web
+  ports:
+  - port: 80
+    targetPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: s2a
+  namespace: test-ingress
+  labels:
+    app: hello2
+spec:
+  selector:
+    app: hello2
+    tier: web
+  ports:
+  - port: 80
+    targetPort: 8080
