@@ -11,7 +11,7 @@ spec:
   selector:
     app: wordpress
     tier: mysql
-  clusterIP: None
+    clusterIP: None
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -68,3 +68,6 @@ spec:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
           claimName: mysql-pv-claim
+       
+
+
