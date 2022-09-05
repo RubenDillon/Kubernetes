@@ -23,8 +23,6 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName:
-          vc01cl01-t0compute
   resources:
     requests:
       storage: 2Gi
