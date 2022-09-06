@@ -1,0 +1,62 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: istio-node
+  labels:
+    app: istio-node
+spec:
+  ports:
+  - port: 8080
+    name: http
+  selector:
+    app: istio-node
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: istio-node-v1
+  labels:
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: istio-node
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: istio-node
+        version: v1
+    spec:
+      containers:
+      - name: istio-node
+        image: bitnami/nginx
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: istio-node-v2
+  labels:
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: istio-node
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: istio-node
+        version: v2
+    spec:
+      containers:
+      - name: meetup-node
+        image: bitnami/apache
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
