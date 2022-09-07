@@ -19,7 +19,8 @@ spec:
         host: s1
         port:
           number: 80
-    -uri:
+  - match:  
+    - uri:
         exact: /bar
     route:    
     - destination:
