@@ -8,9 +8,9 @@ para que se vea la diferencia, entre las dos versiones...
 
 
 Pasos a seguir
-  deploy.yaml
-  gateway.yaml
-  rule.yaml
+1) deploy.yaml
+2) gateway.yaml
+3) rule.yaml
   
 Si quiero mostrar round robin uso
 ....virtualservice.yaml
