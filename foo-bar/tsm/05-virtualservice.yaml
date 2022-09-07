@@ -3,8 +3,6 @@ kind: VirtualService
 metadata:
   name: http-ingress
   namespace: test-ingress
-  labels:
-    app: hello
 spec:
   hosts:
   - "foo.bar.com"
