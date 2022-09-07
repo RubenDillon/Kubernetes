@@ -1,20 +1,28 @@
-apiVersion: extensions/v1beta1
-kind: Ingress
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
 metadata:
   name: http-ingress
   namespace: test-ingress
   labels:
     app: hello
 spec:
-  rules:
-  - host: foo.bar.com
-    http:
-      paths:
-      - path: /foo
-        backend:
-          serviceName: s1
-          servicePort: 80
-      - path: /bar
-        backend:
-          serviceName: s2
-          servicePort: 80
+  hosts:
+  - "foo.bar.com"
+  gateways:
+  - istio-gateway
+  http:
+  - match:
+    - uri:
+        exact: /foo
+    route:
+    - destination:
+        host: s1
+        port:
+          number: 80
+    -uri:
+        exact: /bar
+    route:    
+    - destination:
+        host: s2
+        port:
+          number: 80
