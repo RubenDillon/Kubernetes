@@ -19,10 +19,10 @@ metadata:
   name: s2
   namespace: test-ingress
   labels:
-    app: hello
+    app: hello2
 spec:
   selector:
-    app: hello
+    app: hello2
     tier: web
   ports:
   - port: 80
