@@ -12,12 +12,12 @@ Pasos a seguir
   gateway.yaml
   rule.yaml
   
-  Si quiero mostrar round robin uso
-    virtualservice.yaml
+Si quiero mostrar round robin uso
+....virtualservice.yaml
     
- Si quiero mostrar solo uno de los dos deployments
-    virtual-v1.yaml
+Si quiero mostrar solo uno de los dos deployments
+....virtual-v1.yaml
     
     
- Si quiero mostrar como distribuir la carga x% en la version 1 y y% en la version 2
-     virtual-weight.yaml
+Si quiero mostrar como distribuir la carga x% en la version 1 y y% en la version 2
+....virtual-weight.yaml
