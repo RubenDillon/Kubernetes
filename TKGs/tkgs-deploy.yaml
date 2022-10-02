@@ -2,7 +2,7 @@ apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster 
 metadata: 
   name: tkg-cluster-01 
-  namespace: intranet 
+  namespace: grupo1 
 spec: 
   distribution: 
     fullVersion: ob-19344082-tkgs-ova-ubuntu-2004-v1.21.6---vmware.1-tkg.1
