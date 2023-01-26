@@ -5,7 +5,7 @@ metadata:
   namespace: workshop
 spec:
   distribution:
-    fullVersion: v1.21.2---vmware.1-tkg.1.ee25d55
+    fullVersion: v1.23.8---vmware.3-tkg.1
     # v1.17.8+vmware.1-tkg.1.5417466 
     # v1.20.2---vmware.1-tkg.1.1d4f79a
     # v1.21.2---vmware.1-tkg.1.ee25d55
