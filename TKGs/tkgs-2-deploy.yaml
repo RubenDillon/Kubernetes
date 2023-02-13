@@ -30,7 +30,7 @@ spec:
             storage: 16Gi
       tkr:  
         reference:
-          name: v1.21.2---vmware.1-tkg.1.ee25d55     
+          name: v1.23.8---vmware.3-tkg.1     
   settings:
     storage:
       defaultClass: vc01cl01-t0compute
