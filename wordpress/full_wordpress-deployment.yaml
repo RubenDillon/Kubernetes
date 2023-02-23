@@ -18,7 +18,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: 10.220.69.55/prod-vsphere-ns/wordpress:4.8-apache
+      - image: 10.220.40.147/grupo1/wordpress:4.8-apache
         name: wordpress
         resources:
           limits:
@@ -43,7 +43,7 @@ spec:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html
       imagePullSecrets:
-      - name: prod-vsphere-ns-default-image-pull-secret
+      - name: grupo1-default-image-pull-secret
       volumes:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
