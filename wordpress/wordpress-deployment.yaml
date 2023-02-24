@@ -50,7 +50,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: harbor.20.253.171.68.nip.io/library/wordpress:4.8-apache
+      - image: 10.220.40.147/grupo1/wordpress:4.8-apache
         name: wordpress
         env:
         - name: WORDPRESS_DB_HOST
@@ -66,6 +66,8 @@ spec:
         volumeMounts:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html
+      imagePullSecrets:
+      - name: grupo1-default-image-pull-secret
       volumes:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
