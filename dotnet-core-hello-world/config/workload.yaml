@@ -8,10 +8,6 @@ metadata:
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
     app.kubernetes.io/part-of: hello-world
 spec:
-  build:
-    env:
-      - name: BP_JVM_VERSION
-        value: "11"
   params:
   - name: annotations
     value:
