@@ -1,12 +1,12 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: hello-world
+  name: dotnet-core-hello-world
   labels:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
-    app.kubernetes.io/part-of: hello-world
+    app.kubernetes.io/part-of: dotnet-core-hello-world
 spec:
   params:
   - name: annotations
