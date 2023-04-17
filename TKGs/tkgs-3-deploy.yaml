@@ -1,7 +1,7 @@
 apiVersion: run.tanzu.vmware.com/v1alpha3
 kind: TanzuKubernetesCluster
 metadata:
-  name: tkg-cluster-01                                           #name of cluster
+  name: tkg-lab-01                                           #name of cluster
   namespace: grupo1                                              #name of namespace
   annotations: 
     run.tanzu.vmware.com/resolve-os-image: os-name=ubuntu        #when we want to use Ubuntu as OS for the Tanzu cluster
