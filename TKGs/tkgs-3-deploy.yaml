@@ -3,7 +3,8 @@ kind: TanzuKubernetesCluster
 metadata:
   name: tkg-cluster-01 #name of cluster
   namespace: grupo1 #name of namespace
-  annotations: run.tanzu.vmware.com/resolve-os-image: os-name=ubuntu
+  annotations: 
+    run.tanzu.vmware.com/resolve-os-image: os-name=ubuntu
 spec:
   topology:
     controlPlane:
