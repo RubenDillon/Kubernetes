@@ -1,0 +1,11 @@
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: lb-mario
+spec: 
+  selector: 
+    app: mario
+  ports: 
+    - port: 80 
+      targetPort: 8080 
+  type: LoadBalancer
