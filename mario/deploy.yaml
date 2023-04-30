@@ -17,3 +17,7 @@ spec:
         image: bharathshetty4/supermario:latest
         ports:
         - containerPort: 8080  
+ 
+ # cuando docker hub esta excedido... se puede usar .... pengbai/docker-supermario
+        
+        
