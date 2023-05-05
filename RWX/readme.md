@@ -7,10 +7,14 @@
 ```
 
 2. Update the repo information
+```
     helm repo update
+```
 
 3. Search the repo
-    helm search repo stable
+```
+helm search repo stable
+```
 
 4. Review the information regarding the nfs-server-provisioning
 
