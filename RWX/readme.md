@@ -2,8 +2,10 @@
 
 
 1. Add the google helm repo
+```
     helm repo add stable https://kubernetes-charts.storage.googleapis.com/
-    
+```
+
 2. Update the repo information
     helm repo update
 
