@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - image: 10.220.7.243/grupo1/mysql:5.6
-        name: mysql
+        name: mysql 
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
