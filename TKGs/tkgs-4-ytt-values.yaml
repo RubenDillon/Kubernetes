@@ -1,0 +1,11 @@
+#! schema.yml
+#@data/values-schema
+---
+cluName: "web-shop2"
+defStoreClass: "vc01cl01-t0compute"
+tkr: "v1.23.8---vmware.1-tkg.4"
+vmClassSmall: "best-effort-small"
+vmClassMedium: "best-effort-medium"
+vmClassLarge: "best-effort-large"
+ctrlRepl: 1
+workRepl: 2
