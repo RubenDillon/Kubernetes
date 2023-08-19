@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloweb
+  namespace: test-ingress
+  labels:
+    app: hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello
+      tier: web
+  template:
+    metadata:
+      labels:
+        app: hello
+        tier: web
+    spec:
+      containers:
+      - name: hello-app
+        image: gcr.io/google-samples/hello-app:1.0
+        ports:
+        - containerPort: 8080
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloweb2
+  namespace: test-ingress
+  labels:
+    app: hello2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello2
+      tier: web
+  template:
+    metadata:
+      labels:
+        app: hello2
+        tier: web
+    spec:
+      containers:
+      - name: hello-app2
+        image: gcr.io/google-samples/hello-app:2.0
+        ports:
+        - containerPort: 8080
