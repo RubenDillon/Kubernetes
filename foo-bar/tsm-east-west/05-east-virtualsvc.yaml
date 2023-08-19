@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: http-ingress
+  namespace: test-ingress
+spec:
+  hosts:
+  - "tsm-east.latamteam.name"
+  gateways:
+  - istio-gateway
+  http:
+  - match:
+    - uri:
+        exact: /foo
+    route:
+    - destination:
+        host: s2
+        port:
+          number: 80
